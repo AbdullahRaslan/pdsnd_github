@@ -6,7 +6,7 @@
 2025-12-28
 
 # Project Title
-Bikeshare Data Exploration
+Bikeshare Data Exploration (New York Sample)
 
 ## Description
 This project analyzes US bikeshare data to answer common questions about travel patterns (user types, trip durations, popular stations, and time-based trends). The repository contains code and notebooks to load, clean, analyze, and visualize the data.
