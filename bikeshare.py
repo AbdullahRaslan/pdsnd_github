@@ -75,6 +75,28 @@ def get_filters():
     return city, month, day
 
 
+def load_data(city, month, day):
+    """Load and filter data for the specified city, month and day."""
+    df = pd.read_csv(CITY_DATA[city])
+
+    # ensure Start Time is datetime once
+    df["Start Time"] = pd.to_datetime(df["Start Time"])
+
+    # extract month and day name for filtering/stats
+    df["Month"] = df["Start Time"].dt.month
+    df["Day of Week"] = df["Start Time"].dt.day_name()
+
+    if month != "all":
+        months = ["january", "february", "march", "april", "may", "june"]
+        month_idx = months.index(month) + 1
+        df = df[df["Month"] == month_idx]
+
+    if day != "all":
+        df = df[df["Day of Week"] == day.title()]
+
+    return df
+
+
 def time_stats(df, month, day):
     """Displays statistics on the most frequent times of travel."""
 
