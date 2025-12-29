@@ -7,7 +7,7 @@
 Bikeshare Data Exploration (New York Sample)
 
 ## Description
-This project analyzes US bikeshare data to answer common questions about travel patterns (user types, trip durations, popular stations, and time-based trends). The repository contains code and notebooks to load, clean, analyze, and visualize the data.
+This project analyzes US bikeshare data to answer common questions about travel patterns (user types, trip durations, popular stations, and time-based trends). The repository contains code to load, clean, analyze, and visualize the data.
 
 ## Files used
 - README.md — this file
