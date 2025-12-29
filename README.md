@@ -12,7 +12,7 @@ This project analyzes US bikeshare data to answer common questions about travel 
 ## Files used
 - README.md — this file
 - bikeshare.py — data processing and analysis
-- new_york_city.csv — sample CSV used for testing/analysis 
+- new_york_city.csv — sample CSV used for testing/analysis (not included)
 
 ## How to run
 1. Create and activate the conda environment (example):
